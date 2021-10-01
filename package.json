@@ -8,7 +8,7 @@
     "serve": "node index.js | pino-pretty -c -o '{levelLabel}'"
   },
   "engines": {
-    "node": "7.x"
+    "node": "12.x"
   },
   "repository": "git@github.com:cagataycali/fastify-one-click-deploy.git",
   "author": "cagataycali <cagataycali@icloud.com>",
