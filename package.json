@@ -4,7 +4,8 @@
   "description": "This package shows us how to deploy fastify in seconds.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "serve": "node index.js | pino-pretty -c -o '{levelLabel}'"
   },
   "engines": {
     "node": "7.x"
@@ -14,5 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "fastify": "^0.27.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
   }
 }

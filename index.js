@@ -1,4 +1,8 @@
 'use strict'
+
+// Read the .env file.
+require('dotenv').config()
+
 // Example from quickstart fastify.io
 const fastify = require('fastify')()
 
@@ -23,7 +27,7 @@ fastify
       .send({ hello: 'world' })
   })
 
-fastify.listen(process.env.PORT || 3000, err => {
+fastify.listen(process.env.FASTIFY_PORT || 3000, err => {
   if (err) throw err
   console.log(`server listening on ${fastify.server.address().port}`)
 })
